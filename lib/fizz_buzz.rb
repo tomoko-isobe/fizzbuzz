@@ -14,7 +14,7 @@ class FizzBuzz
 
   private
   def valid?
-    @input_str != "0"
+    @input_str.to_i > 0
   end
 
 end
