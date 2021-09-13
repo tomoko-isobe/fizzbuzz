@@ -10,6 +10,8 @@ class FizzBuzz
   def response
     raise InputError unless valid?
     case
+    when (@input % 15)==0
+      "FizzBuzz"
     when (@input % 3)==0
       "Fizz"
     when (@input % 5)==0
