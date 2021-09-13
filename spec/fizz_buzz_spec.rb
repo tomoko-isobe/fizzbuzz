@@ -22,7 +22,15 @@ RSpec.describe FizzBuzz do
       context "5の倍数" do
         context("5")   { let(:i){ "5" };    it{ is_expected.to eq "Buzz" } }
         context("10")  { let(:i){ "10" };   it{ is_expected.to eq "Buzz" } }
+        context("9995"){ let(:i){ "9995" }; it{ is_expected.to eq "Buzz" } }
       end
+
+      context "3と5の倍数" do
+        context("15")  { let(:i){ "15" };   it{ is_expected.to eq "FizzBuzz" } }
+        context("30")  { let(:i){ "30" };   it{ is_expected.to eq "FizzBuzz" } }
+        context("9990"){ let(:i){ "9990" }; it{ is_expected.to eq "FizzBuzz" } }
+      end
+
     end
 
     context "異常値" do
