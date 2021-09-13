@@ -12,6 +12,8 @@ class FizzBuzz
     case
     when (@input % 3)==0
       "Fizz"
+    when (@input % 5)==0
+      "Buzz"
     else
       @input.to_s
     end
