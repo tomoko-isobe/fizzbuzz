@@ -9,12 +9,13 @@ class FizzBuzz
 
   def response
     raise InputError unless valid?
-    case
-    when (@input % 15)==0
+
+    case @input % 15
+    when 0
       "FizzBuzz"
-    when (@input % 3)==0
+    when 3,6,9,12
       "Fizz"
-    when (@input % 5)==0
+    when 5,10
       "Buzz"
     else
       @input.to_s
