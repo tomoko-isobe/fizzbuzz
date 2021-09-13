@@ -14,7 +14,7 @@ class FizzBuzz
 
   private
   def valid?
-    true
+    @input_str != "0"
   end
 
 end
