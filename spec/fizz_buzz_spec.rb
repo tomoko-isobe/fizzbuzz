@@ -13,7 +13,8 @@ RSpec.describe FizzBuzz do
     end
 
     context "異常値" do
-      context("0以下の数字") { let(:i){ "0" };  it { expect { subject }.to raise_error(InputError) }}
+      context("0以下の数字: 0") { let(:i){ "0" };  it { expect { subject }.to raise_error(InputError) }}
+      context("0以下の数字:-1") { let(:i){ "-1" };  it { expect { subject }.to raise_error(InputError) }}
 
       context "数字以外の文字列"
       context "全角数字"
