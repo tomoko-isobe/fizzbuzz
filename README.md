@@ -8,11 +8,14 @@
 
 ## 実行手順
 
-    $ bundle exec fizz_buzz
+    $ docker-compose run ruby bundle exec fizz_buzz
 
 実行例）
 
-    $ bundle exec fizz_buzz
     数字を入力してください：
     15
     FizzBuzz
+
+## テスト実行手順
+
+    $ docker-compose run ruby bundle exec rspec
