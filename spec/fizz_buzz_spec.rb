@@ -18,6 +18,11 @@ RSpec.describe FizzBuzz do
         context("6")   { let(:i){ "6" };    it{ is_expected.to eq "Fizz" } }
         context("9999"){ let(:i){ "9999" }; it{ is_expected.to eq "Fizz" } }
       end
+
+      context "5の倍数" do
+        context("5")   { let(:i){ "5" };    it{ is_expected.to eq "Buzz" } }
+        context("10")  { let(:i){ "10" };   it{ is_expected.to eq "Buzz" } }
+      end
     end
 
     context "異常値" do
